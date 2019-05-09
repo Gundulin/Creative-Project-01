@@ -4,7 +4,7 @@ function RockPaperScissors(choice) { // 1 = Rock, 2 = Paper, 3 = Scissors
     document.getElementById('RockButton').style.display = "none";
     document.getElementById('PaperButton').style.display = "none";
     document.getElementById('ScissorsButton').style.display = "none";
-    document.getElementById('RematchButton').style.display = "block";
+    document.getElementById('RematchButton').style.display = "inline-block";
 
     /* Computer Value is selected */
     var computerSelection = Math.floor((Math.random()*3) + 1);
@@ -71,7 +71,7 @@ function RockPaperScissorsLizardSpock(choice) { // 1 = Rock, 2 = Paper, 3 = Scis
     document.getElementById('ScissorsButton').style.display = "none";
     document.getElementById('LizardButton').style.display = "none";
     document.getElementById('SpockButton').style.display = "none";
-    document.getElementById('RematchButton').style.display = "block";
+    document.getElementById('RematchButton').style.display = "inline-block";
     
     /* Computer Value is selected */
     var computerSelection = Math.floor((Math.random()*5) + 1);
@@ -115,6 +115,7 @@ function RockPaperScissorsLizardSpock(choice) { // 1 = Rock, 2 = Paper, 3 = Scis
     document.getElementById('UserSelection').innerText = "You chose " + userString + ".";
     document.getElementById('ComputerSelection').innerHTML = "Sheldon chose " + compString + ".";
     
+    /** Check if Win or Lose */
     if (((choice == 1 && (computerSelection == 2 || computerSelection == 5))||
         (choice == 2 && (computerSelection == 3 || computerSelection == 4))||
         (choice == 3 && (computerSelection == 1 || computerSelection == 5))||
@@ -129,7 +130,8 @@ function RockPaperScissorsLizardSpock(choice) { // 1 = Rock, 2 = Paper, 3 = Scis
     }
 }
 
-function MegaRPS(choice) { // 1 = Rock, 2 = Paper, 3 = Scissors, 4 = Lizard, 5 = Spock, 6 = Spiderman, 7 = Batman
+/** Mega Rock, Paper, Scissors Game */
+function MegaRPS(choice) { // 1 = Rock, 2 = Paper, 3 = Scissors, 4 = Lizard, 5 = Spock, 6 = Devil, 7 = Love
     /** Hide everything */
     document.getElementById('RockButton').style.display = "none";
     document.getElementById('PaperButton').style.display = "none";
@@ -138,7 +140,7 @@ function MegaRPS(choice) { // 1 = Rock, 2 = Paper, 3 = Scissors, 4 = Lizard, 5 =
     document.getElementById('SpockButton').style.display = "none";
     document.getElementById('DevilButton').style.display = "none";
     document.getElementById('LoveButton').style.display = "none";
-    document.getElementById('RematchButton').style.display = "block";
+    document.getElementById('RematchButton').style.display = "inline-block";
 
     /* Computer Value is selected */
     var computerSelection = Math.floor((Math.random()*7) + 1);
@@ -206,22 +208,22 @@ function MegaRPS(choice) { // 1 = Rock, 2 = Paper, 3 = Scissors, 4 = Lizard, 5 =
     }
 }
 
-
+/** Resets the buttons */
 function Reset(difficulty) {
-    document.getElementById('RockButton').style.display = "block";
-    document.getElementById('PaperButton').style.display = "block";
-    document.getElementById('ScissorsButton').style.display = "block";
+    document.getElementById('RockButton').style.display = "inline-block";
+    document.getElementById('PaperButton').style.display = "inline-block";
+    document.getElementById('ScissorsButton').style.display = "inline-block";
 
     if (difficulty > 1)
     {
-        document.getElementById('LizardButton').style.display = "block";
-        document.getElementById('SpockButton').style.display = "block";
+        document.getElementById('LizardButton').style.display = "inline-block";
+        document.getElementById('SpockButton').style.display = "inline-block";
     }
 
     if (difficulty > 2)
     {
-        document.getElementById('DevilButton').style.display = "block";
-        document.getElementById('LoveButton').style.display = "block";
+        document.getElementById('DevilButton').style.display = "inline-block";
+        document.getElementById('LoveButton').style.display = "inline-block";
     }
     document.getElementById('RematchButton').style.display = "none";
     document.getElementById('UserSelection').innerText = "";

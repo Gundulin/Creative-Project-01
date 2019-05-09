@@ -1,5 +1,7 @@
 h1 {
-    margin-left: .5em;
+    padding-left: .5em;
+    padding-bottom: .2em;
+    padding-top: .2em;
 }
 h2 {
     margin: .5em;
@@ -63,5 +65,9 @@ th {
 #secondBox {
     padding-top: 0em;
     padding-left: 1em;
+}
+
+button {
+    display: inline-block;
 }
 
