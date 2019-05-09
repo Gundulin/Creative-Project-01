@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- BootStrap Link -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Games - Advanced</title>
+    </head>
+    <body id="MegaRPS">
+        <h1>Rock, Paper, Scissors Games</h1>
+        <!-- BootStrap NavBar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!--<a class="navbar-brand" href="#">Games</a>-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="01_Games.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="RPS.html">Easy</a>
+                <a class="nav-item nav-link" href="RPSLS.html">Intermediate</a>
+                <a class="nav-item nav-link" href="MegaRPS.html">Advanced</a>
+                </div>
+            </div>
+        </nav>
+        <h2>Rock, Paper, Scissors, Lizard, Spock, Devil, Love</h2>
+        <table id="MegaRPStable">
+                <tr id="MegaRPStable">
+                    <th id="MegaRPStable">
+                        <img src="./images/MegaRPS.jpg" alt="RockPaperScissors"
+                        height="30%">
+                    <th id="MegaRPStable" text-align="center">
+                        <button id="RockButton" onclick="MegaRPS(1)">Rock</button>
+                        <button id="PaperButton" onclick="MegaRPS(2)">Paper</button>
+                        <button id="ScissorsButton" onclick="MegaRPS(3)">Scissors</button>
+                        <button id="LizardButton" onclick="MegaRPS(4)">Lizard</button>
+                        <button id="SpockButton" onclick="MegaRPS(5)">Spock</button>
+                        <button id="DevilButton" onclick="MegaRPS(6)">Devil</button>
+                        <button id="LoveButton" onclick="MegaRPS(7)">Love</button>
+                        <button id="RematchButton" onclick="Reset(3)">Rematch</button>
+                    </th>
+                    <th id="MegaRPStable">
+                        <p id="UserSelection"></p>
+                        <p id="ComputerSelection"></p>
+                        <p id="Outcome"></p>
+                    </th>
+                </tr>
+            </table>
+    </body>
+</html>

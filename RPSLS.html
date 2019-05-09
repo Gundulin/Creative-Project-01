@@ -1,0 +1,53 @@
+<!-- Rock, Paper, Scissors, Lizard, Spock -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- BootStrap Link -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Games - Intermediate</title>
+    </head>
+    <body id="RPSLS">
+        <h1>Rock, Paper, Scissors Games</h1>
+        <!-- BootStrap NavBar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!--<a class="navbar-brand" href="#">Games</a>-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="01_Games.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="RPS.html">Easy</a>
+                <a class="nav-item nav-link" href="RPSLS.html">Intermediate</a>
+                <a class="nav-item nav-link" href="MegaRPS.html">Advanced</a>
+                </div>
+            </div>
+            
+        </nav>
+        <h2>Rock, Paper, Scissors, Lizard, Spock</h2>
+        <table id="RPSLStable">
+            <tr id="RPSLStable">
+                <th id="RPSLStable">
+                    <img src="./images/RockPaperScissorsLizardSpock.png" alt="RockPaperScissors"
+                    height="30%">
+                <th id="RPSLStable" text-align="center">
+                    <button id="RockButton" onclick="RockPaperScissorsLizardSpock(1)">Rock</button>
+                    <button id="PaperButton" onclick="RockPaperScissorsLizardSpock(2)">Paper</button>
+                    <button id="ScissorsButton" onclick="RockPaperScissorsLizardSpock(3)">Scissors</button>
+                    <button id="LizardButton" onclick="RockPaperScissorsLizardSpock(4)">Lizard</button>
+                    <button id="SpockButton" onclick="RockPaperScissorsLizardSpock(5)">Spock</button>
+                    <button id="RematchButton" onclick="Reset(2)">Rematch</button>
+                </th>
+                <th id="RPSLStable">
+                    <p id="UserSelection"></p>
+                    <p id="ComputerSelection"></p>
+                    <p id="Outcome"></p>
+                </th>
+            </tr>
+        </table>        
+    </body>
+</html>

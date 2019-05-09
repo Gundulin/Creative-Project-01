@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- BootStrap Link -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Games - Easy</title>
+    </head>
+    <body id="RPS">
+        <h1>Rock, Paper, Scissors Games</h1>
+        <!-- BootStrap NavBar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="01_Games.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="RPS.html">Easy</a>
+                <a class="nav-item nav-link" href="RPSLS.html">Intermediate</a>
+                <a class="nav-item nav-link" href="MegaRPS.html">Advanced</a>
+                </div>
+            </div>
+        </nav>
+        <h2>Rock, Paper, Scissors</h2>
+        <table id="RPStable">
+            <tr id="RPStable">
+                <th id="RPStable">
+                    <img src="./images/RockPaperScissors.png" alt="RockPaperScissors"
+                height="30%"></th>
+                <th id="secondBox" text-align="center">
+                    <button id="RockButton" onclick="RockPaperScissors(1)">Rock</button>
+                    <button id="PaperButton" onclick="RockPaperScissors(2)">Paper</button>
+                    <button id="ScissorsButton" onclick="RockPaperScissors(3)">Scissors</button>
+                    <button id="RematchButton" onclick="Reset(1)">Rematch</button>
+                </th>
+                <th id="RPStable">
+                    <p id="UserSelection"></p>
+                    <p id="ComputerSelection"></p>
+                    <p id="Outcome"></p>
+                </th>
+            </tr>
+        </table>    
+    </body>
+</html>

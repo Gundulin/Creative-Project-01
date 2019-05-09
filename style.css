@@ -1,0 +1,67 @@
+h1 {
+    margin-left: .5em;
+}
+h2 {
+    margin: .5em;
+}
+
+p {
+    margin: 3em;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: antiquewhite;
+}
+
+#Home {
+    background-color: antiquewhite;
+}
+
+#RematchButton {
+    display: none;
+}
+
+#RPS {
+    background-color: pink
+}
+
+#RPSLS {
+    background-color: #15133C;
+    color: #5FC5BA
+}
+
+#RPSLStable {
+    border: 1px solid #5FC5BA;
+}
+
+#RPStable{
+    border: 1px solid black;
+}
+
+#MegaRPStable {
+    border: 1px solid white;
+}
+
+#MegaRPS {
+    background-color: maroon;
+    color: white;
+}
+
+th {
+    align-content: center;
+    width: 30%;
+}
+
+@media screen and (min-width: 640px)
+{
+    .flex-container {
+        display: flex;
+    }
+}
+
+#secondBox {
+    padding-top: 0em;
+    padding-left: 1em;
+}
+
